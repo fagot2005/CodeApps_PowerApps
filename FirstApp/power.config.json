@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+  "appId": "f27c6b0c-5d7f-4b19-bef2-76f676d8087a",
+  "appDisplayName": "FirstApp",
+  "region": "prod",
+  "appType": "CodeApp",
+  "environmentId": "b8827950-6e74-ede9-b210-50d4bcc66710",
+  "description": " ",
+  "buildPath": "./dist",
+  "buildEntryPoint": "index.html",
+  "localAppUrl": "http://localhost:3000",
+  "logoPath": "Default",
+  "connectionReferences": {},
+  "databaseReferences": {
+    "default.cds": {
+      "dataSources": {
+        "ar_codeapps": {
+          "entitySetName": "cr989_ar_codeapps",
+          "logicalName": "cr989_ar_codeapp",
+          "isHidden": false
+        }
+      },
+      "environmentVariableName": ""
+    }
+  }
+}

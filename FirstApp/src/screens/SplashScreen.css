@@ -1,0 +1,69 @@
+.splash-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #260070;
+  color: #fff;
+  font-family:
+    "Segoe UI",
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+.splash-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 42px;
+  transform: translateY(-16px);
+}
+
+.splash-logo {
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.splash-progress {
+  position: relative;
+  width: 320px;
+  height: 4px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.splash-progress span {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 45%;
+  background: #fff;
+  animation: splash-progress-slide 1.25s ease-in-out infinite;
+}
+
+.splash-version {
+  position: fixed;
+  left: 44px;
+  bottom: 42px;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@keyframes splash-progress-slide {
+  0% {
+    transform: translateX(-110%);
+  }
+
+  50% {
+    transform: translateX(75%);
+  }
+
+  100% {
+    transform: translateX(250%);
+  }
+}
