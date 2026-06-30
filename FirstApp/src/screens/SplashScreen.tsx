@@ -9,7 +9,7 @@ function SplashScreen() {
           <span />
         </div>
       </div>
-      <div className="splash-version">ver. 2.1.014</div>
+      <div className="splash-version">ver. 2.1.015</div>
     </div>
   );
 }
